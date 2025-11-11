@@ -14,12 +14,12 @@
 //
 // ============================================================================
 
+
+// Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
+
 #include <stdio.h>
 #include <stlib.h>  //
 #include <string.h> // 
-
-
-// Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
 
 // --- Constantes Globais ---
 // Definem valores fixos para o número de territórios, missões e tamanho máximo de strings, facilitando a manutenção.
