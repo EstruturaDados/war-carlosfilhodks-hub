@@ -26,16 +26,25 @@
 
 #define TAM_NOME 30
 #define TAM_COR 10 
-
-
+#define MAX_TER 5
 
 // --- Estrutura de Dados ---
 // Define a estrutura para um território, contendo seu nome, a cor do exército que o domina e o número de tropas.
 
 struct Território {
-    char Nome[]
-    char
+    char Nome[TAM_NOME];
+    char Cor[TAM_COR];
+    int Tropas; 
+}; 
 
+// Função limpar o buffer de entrada ---
+void limparbufferentrada() {
+    int c; 
+    while ((c = getchar()) != '\n' && c != EOF);
+}
+
+  //* code */
+    
 // --- Protótipos das Funções ---
 // Declarações antecipadas de todas as funções que serão usadas no programa, organizadas por categoria.
 // Funções de setup e gerenciamento de memória:
@@ -46,6 +55,49 @@ struct Território {
 // --- Função Principal (main) ---
 // Função principal que orquestra o fluxo do jogo, chamando as outras funções em ordem.
 int main() {
+    struct Território Cadastro[MAX_TER];
+    int Totalterritorio =0;
+    int opcao;
+
+    do{
+        // exibe o menu cadastro 
+        printf("===========================\n");
+        printf("Vamos cadastrar os 5 territórios iniciais do nosso mundo\n");
+        printf("===========================\n");
+        printf("1 - cadastrar novo território\n");
+        printf("2 - Listar todos os territórios\n");
+        printf("0 - Sair\n")
+        printf("----------------------------\n");
+
+        //Lê a opção do usuário. 
+        scanf("%d", &opcao);
+        limparbufferentrada(); //Limpa o '\n' deixado pelo scanf. 
+
+        // Processamento da opção. 
+        switch (opcao) {}
+        {
+        case constant expression:
+            /* code */
+            break;
+        
+        default:
+            break;
+        }
+    
+        
+    }
+
+
+
+
+    {
+        /* data */
+    };
+    
+    {
+        /* data */
+    };
+    
     // 1. Configuração Inicial (Setup):
     // - Define o locale para português.
     // - Inicializa a semente para geração de números aleatórios com base no tempo atual.
