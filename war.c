@@ -17,6 +17,7 @@
 
 // Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
 
+#include <stdint.h>
 #include <stdio.h>
 #include <stdlib.h>  //
 #include <string.h> // 
@@ -74,9 +75,19 @@ int main() {
         limparbufferentrada(); //Limpa o '\n' deixado pelo scanf. 
 
         // Processamento da opção. 
-        switch (opcao) {}
+        switch (opcao)
         {
-        case constant expression:
+        case 1: // Cadastro do Território 1.
+            printf("---Cadastro do Território 1---\n\n");
+            
+            if(Totalterritorio < MAX_TER) {
+                printf("Digite nome do Território 1:");
+                fgets(Cadastro[Totalterritorio].Nome, TAM_NOME, stdin);
+                
+            }
+            
+            
+            
             /* code */
             break;
         
