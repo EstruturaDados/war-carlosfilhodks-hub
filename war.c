@@ -18,14 +18,15 @@
 // Inclusão das bibliotecas padrão necessárias para entrada/saída, alocação de memória, manipulação de strings e tempo.
 
 #include <stdio.h>
-#include <stlib.h>  //
+#include <stdlib.h>  //
 #include <string.h> // 
 
 // --- Constantes Globais ---
 // Definem valores fixos para o número de territórios, missões e tamanho máximo de strings, facilitando a manutenção.
 
-#include MAX_STRING 30
-#include MAX_STRING 10
+#define TAM_NOME 30
+#define TAM_COR 10 
+
 
 
 // --- Estrutura de Dados ---
