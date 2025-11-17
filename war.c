@@ -84,6 +84,13 @@ int main() {
                 printf("Digite nome do Território 1:");
                 fgets(Cadastro[Totalterritorio].Nome, TAM_NOME, stdin);
                 
+                printf("Digite a Cor do Exército (Ex: Azul, Verde):");
+                fgets(Cadastro[Totalterritorio].Cor, TAM_COR, stdin);
+
+                printf("Digite o número de tropas:");
+                fgets(Cadastro[Totalterritorio].Tropas);
+
+                
             }
             
             
